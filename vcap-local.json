@@ -1,0 +1,48 @@
+{
+  "services": {
+    "cloudantNoSQLDB": [
+      {
+        "name": "titanic_db",
+        "label": "cloudantNoSQLDB",
+        "plan": "Shared",
+        "credentials": {
+          "apikey": "secret",
+          "host": "51753098-612d-4b7c-bdb2-6f3bcfe43e5e-bluemix.cloudantnosqldb.appdomain.cloud",
+          "iam_apikey_description": "Auto-generated for key",
+          "iam_apikey_name": "dbuser",
+          "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+          "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/2810c9430db64e67882c1c3b1b0fad28::serviceid:ServiceId-f9e2320a-e7c3-4d87-93d4-b9e92db31413",
+          "url": "https://51753098-612d-4b7c-bdb2-6f3bcfe43e5e-bluemix.cloudantnosqldb.appdomain.cloud",
+          "username": "user"
+        }
+      }
+    ],
+    "cloud-object-storage": [
+        {
+            "credentials": {
+              "apikey": "secret",
+              "endpoints": "https://s3.ap.cloud-object-storage.appdomain.cloud",
+              "iam_apikey_description": "Auto-generated for key",
+              "iam_apikey_name": "usuario",
+              "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+              "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/2810c9430db64e67882c1c3b1b0fad28::serviceid:ServiceId-7c2a4186-005d-4afa-9254-217fc415cd25",
+              "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/2810c9430db64e67882c1c3b1b0fad28:8fdc019b-ec4c-4f57-9b41-0f10f4bbe78a::"
+            },
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "cloud-object-storage",
+            "provider": null,
+            "plan": "Lite",
+            "name": "CloudStorage",
+            "tags": [
+                "Lite",
+                "storage",
+                "ibm_release",
+                "ibm_created",
+                "rc_compatible",
+                "ibmcloud-alias"
+            ]
+        }
+    ]
+  }
+}

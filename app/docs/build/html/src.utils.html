@@ -1,0 +1,205 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>src.utils package &#8212; Project_titanic 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="src.models package" href="src.models.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="src.models.html" title="src.models package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Project_titanic 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >src</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="src.html" accesskey="U">src package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">src.utils package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="src-utils-package">
+<h1>src.utils package<a class="headerlink" href="#src-utils-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-src.utils.utils">
+<span id="src-utils-utils-module"></span><h2>src.utils.utils module<a class="headerlink" href="#module-src.utils.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.utils.utils.DocumentDB">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">src.utils.utils.</span></span><span class="sig-name descname"><span class="pre">DocumentDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.DocumentDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase para gestionar la base de datos documental IBM Cloudant</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.utils.utils.DocumentDB.create_document">
+<span class="sig-name descname"><span class="pre">create_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">document_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.DocumentDB.create_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función para crear un documento en la base de datos</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db (str):  Conexión a una base de datos.
+document_dict (dict):  Documento a insertar.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.utils.utils.DocumentDB.database_exists">
+<span class="sig-name descname"><span class="pre">database_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.DocumentDB.database_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función para comprobar si existe la base de datos.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_name (str):  Nombre de la base de datos.</p>
+</dd>
+<dt>Returns:</dt><dd><p>boolean. Existencia o no de la base de datos.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.utils.utils.DocumentDB.get_database">
+<span class="sig-name descname"><span class="pre">get_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.DocumentDB.get_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función para obtener la base de datos elegida.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_name (str):  Nombre de la base de datos.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Database. Conexión a la base de datos elegida.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.utils.utils.IBMCOS">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">src.utils.utils.</span></span><span class="sig-name descname"><span class="pre">IBMCOS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ibm_api_key_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ibm_service_instance_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ibm_auth_endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint_url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.IBMCOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase para gestionar el repositorio de objetos IBM COS</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.utils.utils.IBMCOS.get_object_in_cos">
+<span class="sig-name descname"><span class="pre">get_object_in_cos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bucket_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'deposittitanic'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.IBMCOS.get_object_in_cos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función para obtener un objeto de IBM COS.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>key (str):  Nombre del objeto a obtener de COS.</p>
+</dd>
+<dt>Kwargs:</dt><dd><p>bucket_name (str): depósito de COS elegido.</p>
+</dd>
+<dt>Returns:</dt><dd><p>obj. Objeto descargado.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.utils.utils.IBMCOS.save_object_in_cos">
+<span class="sig-name descname"><span class="pre">save_object_in_cos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bucket_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'deposittitanic'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.utils.utils.IBMCOS.save_object_in_cos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función para guardar objeto en IBM COS.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>obj:  Objeto a guardar.
+name (str):  Nombre del objeto a guardar.
+timestamp (float): Segundos transcurridos.</p>
+</dd>
+<dt>Kwargs:</dt><dd><p>bucket_name (str): depósito de COS elegido.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src.utils" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">src.utils package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-src.utils.utils">src.utils.utils module</a></li>
+<li><a class="reference internal" href="#module-src.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="src.models.html"
+                        title="previous chapter">src.models package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/src.utils.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="src.models.html" title="src.models package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Project_titanic 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >src</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="src.html" >src package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">src.utils package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Francisco Rodriguez.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.1.
+    </div>
+  </body>
+</html>
